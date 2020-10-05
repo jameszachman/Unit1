@@ -27,7 +27,7 @@ public class App {
         if(answer1.equals(correctAnswer1)){
              System.out.println("You are correct.");
              i = i + 1; 
-             p = p + 20;
+             p = p + 10;
         }
         else{
             System.out.println("You are incorrect.");
@@ -41,7 +41,7 @@ public class App {
         if(answer2.equals(correctAnswer2)){
              System.out.println("You are correct.");
              i = i + 1;
-             p = p + 20;
+             p = p + 10;
         }
         else{
             System.out.println("You are incorrect.");
@@ -55,7 +55,7 @@ public class App {
         if(answer3.equals(correctAnswer3)){
              System.out.println("You are correct.");
              i = i + 1;
-             p = p + 20;
+             p = p + 10;
         }
         else{
             System.out.println("You are incorrect.");
@@ -69,7 +69,7 @@ public class App {
         if(answer4.equals(correctAnswer4)){
              System.out.println("You are correct.");
              i = i + 1;
-             p = p + 20;
+             p = p + 10;
         }
         else{
             System.out.println("You are incorrect.");
@@ -83,7 +83,102 @@ public class App {
         if(answer5.equals(correctAnswer5)){
              System.out.println("You are correct.");
              i = i + 1;
-             p = p + 20;
+             p = p + 10;
+        }
+        else{
+            System.out.println("You are incorrect.");
+            i = i + 0;
+            p = p + 0;
+        }
+
+        System.out.println("Your score is " + i + " out of 5" );
+        System.out.println("You got " + p + "%.");
+           
+        }
+
+        //Sixth Question
+        System.out.println("What color is a carrot?");
+        answer5 = input.nextLine();
+        if(answer5.equals(correctAnswer5)){
+             System.out.println("You are correct.");
+             i = i + 1;
+             p = p + 10;
+        }
+        else{
+            System.out.println("You are incorrect.");
+            i = i + 0;
+            p = p + 0;
+        }
+
+        System.out.println("Your score is " + i + " out of 5" );
+        System.out.println("You got " + p + "%.");
+           
+        }
+
+        //Seventh Question
+        System.out.println("What color is a carrot?");
+        answer5 = input.nextLine();
+        if(answer5.equals(correctAnswer5)){
+             System.out.println("You are correct.");
+             i = i + 1;
+             p = p + 10;
+        }
+        else{
+            System.out.println("You are incorrect.");
+            i = i + 0;
+            p = p + 0;
+        }
+
+        System.out.println("Your score is " + i + " out of 5" );
+        System.out.println("You got " + p + "%.");
+           
+        }
+        
+        //Eighth Question
+        System.out.println("What color is a carrot?");
+        answer5 = input.nextLine();
+        if(answer5.equals(correctAnswer5)){
+             System.out.println("You are correct.");
+             i = i + 1;
+             p = p + 10;
+        }
+        else{
+            System.out.println("You are incorrect.");
+            i = i + 0;
+            p = p + 0;
+        }
+
+        System.out.println("Your score is " + i + " out of 5" );
+        System.out.println("You got " + p + "%.");
+           
+        }
+        
+        //Ninth Question
+        System.out.println("What color is a carrot?");
+        answer5 = input.nextLine();
+        if(answer5.equals(correctAnswer5)){
+             System.out.println("You are correct.");
+             i = i + 1;
+             p = p + 10;
+        }
+        else{
+            System.out.println("You are incorrect.");
+            i = i + 0;
+            p = p + 0;
+        }
+
+        System.out.println("Your score is " + i + " out of 5" );
+        System.out.println("You got " + p + "%.");
+           
+        }
+        
+        //Tenth Question
+        System.out.println("What color is a carrot?");
+        answer5 = input.nextLine();
+        if(answer5.equals(correctAnswer5)){
+             System.out.println("You are correct.");
+             i = i + 1;
+             p = p + 10;
         }
         else{
             System.out.println("You are incorrect.");
