@@ -5,21 +5,23 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
     Scanner input = new Scanner(System.in);
-        int i = 0;
-    String password = input.next();
-
+        
     System.out.println("Please enter password.");
+    int i = 0;
+    String pattern = input.nextLine();
 
     //Questions
-        if(password == "lordoftherings"){
+
+        if(pattern.equals("lordoftherings") ){
             System.out.println("You have found the password.");
+            System.exit(1);
         }
-    //Wrong Answer
-        if(password != "lordoftherings"){
-            System.out.println("Wrong password.  Try again.");
+        else{
+        System.out.println("Wrong password.  Try again.");
             i = i + 1;
+        System.out.println("Please enter password.");  
         }
-    //Lock Out
+
         if(i == 3){
             System.out.println("Too many attempts.  Relaunch program to try again.");
             System.exit(1);
