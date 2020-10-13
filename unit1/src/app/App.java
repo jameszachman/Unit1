@@ -5,31 +5,34 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
     Scanner input = new Scanner(System.in);
-    int i = 36;
-    boolean doneFinish = false;
-
-    System.out.println("Pick a number between 0-100.");
+    
+    System.out.println("Please enter a number");
     input.nextLine();
+    int firstNum = input.nextInt();
 
-    while(doneFinish == false){
-
-    if(input.nextInt() == i){
-        System.out.println("You have found the number!");
-        doneFinish = true;
+    System.out.println("Please enter another number");
+    input.nextLine();
+    int secondNum = input.nextInt();
+    
+    while(firstNum < secondNum){
+    if(firstNum % 2 == 0){
+        firstNum = firstNum + 2;
+        System.out.println(firstNum);
        
     }
+
     else{
-        if(input.nextInt() < i){
-                System.out.println("Too low.");
-                
-            }
-            else{
-                if(input.nextInt() > i){
-                        System.out.println("Too high");
-            }
-            }
+        if(firstNum % 2 != 0){
+            firstNum = firstNum + 1;
+            System.out.println(firstNum);
+
+            firstNum = firstNum + 2;
+            System.out.println(firstNum);
         }
+        
     }
+}
+   
         input.close();
 }
 }
