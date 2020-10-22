@@ -5,21 +5,31 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
     Scanner input = new Scanner(System.in);
-    
-    System.out.println("Please enter a number");
-    int firstNum = input.nextInt();
-    input.nextLine();
 
-    System.out.println("Please enter a larger number");
-    int secondNum = input.nextInt();
-    input.nextLine();
-    
-    for (int i = firstNum; i < secondNum; i++){
+    System.out.println("What is the temperature outside?");
 
-        if (i % 2 == 0){
-            System.out.println(i);
+    int fNum = 32;
+    int iNum = input.nextInt();
+    boolean on = true;
+    
+    
+    
+    while (on == true){
+        if (iNum < fNum){
+            System.out.println("It is below freezing outside.");
+            on = false;
+        }
+        if (iNum > fNum){
+            System.out.println("It is above freezing outside.");
+            on = false;
+        }
+        if (iNum == fNum){
+            System.out.println("It is 32 degrees outside.");
+            on = false;
         }
     }
-   
+    
+
+    
 }
 }
