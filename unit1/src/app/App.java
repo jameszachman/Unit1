@@ -28,7 +28,7 @@ public class App {
             on = false;
         }
     }
-    
+        input.close();
 
     
 }
