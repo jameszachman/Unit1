@@ -7,32 +7,19 @@ public class App {
     Scanner input = new Scanner(System.in);
     
     System.out.println("Please enter a number");
-    input.nextLine();
     int firstNum = input.nextInt();
-
-    System.out.println("Please enter another number");
     input.nextLine();
+
+    System.out.println("Please enter a larger number");
     int secondNum = input.nextInt();
+    input.nextLine();
     
-    while(firstNum < secondNum){
-    if(firstNum % 2 == 0){
-        firstNum = firstNum + 2;
-        System.out.println(firstNum);
-       
-    }
+    for (int i = firstNum; i < secondNum; i++){
 
-    else{
-        if(firstNum % 2 != 0){
-            firstNum = firstNum + 1;
-            System.out.println(firstNum);
-
-            firstNum = firstNum + 2;
-            System.out.println(firstNum);
+        if (i % 2 == 0){
+            System.out.println(i);
         }
-        
     }
-}
    
-        input.close();
 }
 }
