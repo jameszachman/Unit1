@@ -8,28 +8,11 @@ public class App {
 
     System.out.println("What is the temperature outside?");
 
-    int fNum = 32;
-    int iNum = input.nextInt();
-    boolean on = true;
-    
-    
-    
-    while (on == true){
-        if (iNum < fNum){
-            System.out.println("It is below freezing outside.");
-            on = false;
-        }
-        if (iNum > fNum){
-            System.out.println("It is above freezing outside.");
-            on = false;
-        }
-        if (iNum == fNum){
-            System.out.println("It is 32 degrees outside.");
-            on = false;
-        }
-    }
-        input.close();
+    int i = 100;
+
+    System.out.println("Would you like to make an inside or outside bet?");
 
     
+
 }
 }
