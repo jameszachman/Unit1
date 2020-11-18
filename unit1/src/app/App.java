@@ -7,17 +7,19 @@ public class App {
     Scanner input = new Scanner(System.in);
 
     int i = 100;
+    int user = input.nextInt();
 
     //String inside = "inside";
     //String outside = "outside";
     //String column = "column";
     //String dozen = "dozen";
+
     System.out.println("Would you like to make an inside or outside bet?");
     String response = input.nextLine();
 
     if(response.equals("inside")){
         System.out.println("Which type of bet would you like? (straight-up, split, street, corner, five or line)");
-        input.nextLine();
+        
 
         //Straight-Up Bets
         if(response.equals("straight-up")){
