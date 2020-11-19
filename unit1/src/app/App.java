@@ -6,14 +6,16 @@ public class App {
     public static void main(String[] args) throws Exception {
     Scanner input = new Scanner(System.in);
 
-    int i = 100;
-    int user = input.nextInt();
-
+    //int i = 100;
+    //int user = input.nextInt();
+    int betsLeft = 0;
     //String inside = "inside";
     //String outside = "outside";
     //String column = "column";
     //String dozen = "dozen";
 
+    while(betsLeft != 10){
+    
     System.out.println("Would you like to make an inside or outside bet?");
     String response = input.nextLine();
 
@@ -47,7 +49,7 @@ public class App {
 
         //Five Bets
         if(response.equals("five")){
-            System.out.println("You have chosen to bet on 0, 00, 1, 2 and 3.  Now spinning...");
+            System.out.println("You have chosen to bet on 0, 00, 1, 2 and 3.  ");
             input.nextInt();
         }
 
@@ -69,15 +71,15 @@ public class App {
             input.nextLine();
 
             if(response.equals("1st")){
-            System.out.println("You've chosen the 1st column.  Now spinning...");
+            System.out.println("You've chosen the 1st column.  ");
             }
 
             if(response.equals("2nd")){
-            System.out.println("You've chosen the 2nd column.  Now spinning...");
+            System.out.println("You've chosen the 2nd column.  ");
             }
 
             if(response.equals("3rd")){
-            System.out.println("You've chosen the 3rd column.  Now spinning...");
+            System.out.println("You've chosen the 3rd column.  ");
             }
         }
         
@@ -87,15 +89,15 @@ public class App {
             input.nextLine();
 
             if(response.equals("1st 12")){
-                System.out.println("You've chosen the 1st 12.  Now spinning...");
+                System.out.println("You've chosen the 1st 12.  ");
             }
 
             if(response.equals("2nd 12")){
-                System.out.println("You've chosen the 2nd 12.  Now spinning...");
+                System.out.println("You've chosen the 2nd 12.  ");
             }
 
             if(response.equals("3rd 12")){
-                System.out.println("You've chosen the 3rd 12.  Now spinning...");
+                System.out.println("You've chosen the 3rd 12.  ");
             }
 
         //Bet on Color
@@ -104,36 +106,36 @@ public class App {
             input.nextLine();
 
             if(response.equals("black")){
-                System.out.println("You've chosen black.  Now spinning...");
+                System.out.println("You've chosen black.  ");
             }
 
             if(response.equals("red")){
-                System.out.println("You've chosen red.  Now spinning...");
+                System.out.println("You've chosen red.  ");
             }
         }
 
         //Bet on Odd
         if(response.equals("odd")){
-            System.out.println("You've chosen to bet on all odd numbers.  Now spinning...");
+            System.out.println("You've chosen to bet on all odd numbers.  ");
             input.nextLine();
         }
 
         //Bet on Even
         if(response.equals("even")){
-            System.out.println("You've chosen to bet on all even numbers.  Now spinning...");
+            System.out.println("You've chosen to bet on all even numbers.  ");
             input.nextLine();
         }
         
 
         //Bet on Low
         if(response.equals("low")){
-            System.out.println("You've chosen to bet on the low numbers.  Now spinning...");
+            System.out.println("You've chosen to bet on the low numbers.  ");
             input.nextLine();
         }
 
         //Bet on High
         if(response.equals("high")){
-            System.out.println("You've chosen to bet on the high numbers.  Now spinning...");
+            System.out.println("You've chosen to bet on the high numbers.  ");
             input.nextLine();
         }
 
@@ -141,5 +143,6 @@ public class App {
 
     }
 
+}
 }
 }
